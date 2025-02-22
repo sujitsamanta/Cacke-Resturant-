@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style> -->
+  <!-- <link rel="stylesheet" href="Assets/FONTS/font-awesome-4.7.0/css/all.min.css"> -->
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <link rel="icon" type="img/jpg" href="Assets/IMG/inon.webp">
+  <link rel="stylesheet" href="Assets/CSS/style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="assets/bootstrap-5.3.3-dist/css/bootstrap.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="icon" type="img/jpg" href="Assets/IMG/Cake.png">
+  <title>Register</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    html::-webkit-scrollbar {
+      display: none;
+    }
+
+    .navbar {
+      background-color: #ffe0ec;
+      border: 3px solid #fb43ae;
+      color: black;
+      margin: 1vh 5vw 0vh 5vw;
+      border-radius: 10px;
+      padding: .5rem;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    }
+
+
+    @media (max-width:991px) {
+      .sidebar {
+        background: transparent;
+        backdrop-filter: blur(5px);
+        color: black;
+      }
+    }
+
+    .navbar-brand {
+      font-weight: 520;
+      font-size: xx-large;
+      color: rgb(0, 0, 0);
+      transition: 0.3s color;
+    }
+
+    .login-button {
+      background-color: #fe59ba;
+      border: 3px solid #fe59ba;
+      color: rgb(255, 255, 255);
+      padding: .5rem;
+      text-decoration: none;
+      border-radius: 15px;
+      transition: 0.3s background-color;
+    }
+
+    .login-button:hover {
+      color: black;
+      background-color: rgb(255, 255, 255);
+      border: 3px solid #fe59ba;
+      transition: 0.5s color;
+    }
+
+    .navbar-toggler {
+      border: none;
+      outline: none;
+    }
+
+    .navbar-toggler:focus,
+    .btn-close:focus {
+      box-shadow: none;
+      outline: none;
+    }
+
+    .nav-link {
+      font-size: x-large;
+      font-weight: 500;
+      position: relative;
+    }
+
+    .nav-link:hover,
+    .nav-link:active {
+      color: black;
+    }
+
+    .login-button {
+      font-size: large;
+      font-weight: 500;
+    }
+
+    @media(min-width:991px) {
+      .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 3px;
+        background-color: #fb43ae;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+      }
+
+      .nav-link:hover::before,
+      .nav-link:active::before {
+        width: 100%;
+        visibility: visible;
+
+      }
+
+    }
+  </style>
+  
+</head>
+<!-- NAV BAR -->
+
+<body style="background-image: url(Assets/IMG/back.jpg); ">
+
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand me-auto" href="#" style="font-size: x-large;">CAKE shop</a>
+
+      <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h4 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: rgb(0, 0, 0);">CAKE shop</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3" style="font-size: x-large;font-weight: 500;
+          ">
+            <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              
+              <a class="nav-link mx-lg-2" href="Manu.html" >Manu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="order.html">Order</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="booktable.html">Book table</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="sarvish.html">Service</a>
+              
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="contactus.html">Contact</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      <a href="login.html" class="login-button">Login</a>
+      <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <div class="box" style=" display: flex; justify-content: center; position:relative; top: 18vh;">
+    <!-- top: 24vh; -->
+    <div class="regbox"
+      style="font-size: large; align-items: center; text-align: center;  width: 40vmax;  background-color: rgba(250, 235, 215, 0.527);   backdrop-filter: blur(3px); border-radius: 10px;">
+      <h1>Register</h1>
+      <!-- height: 55vmin; -->
+      <input type="email" placeholder=" &nbsp; &nbsp; Email ID">
+      <input type="text" placeholder=" &nbsp; &nbsp;User ID">
+      <input type="password" placeholder=" &nbsp; &nbsp;Enter Password">
+      <input type="password" placeholder=" &nbsp; &nbsp;Confurm Password"><br>
+      <a href="login.html">Have an Account</a><br>
+      <input type="submit" id="submit">
+    </div>
+  </div>
+
+  <footer style="margin-top: 10vmin; background-color: rgb(0, 0, 0); width: 100%; padding: 1rem; position:absolute; bottom:0px;">
+  <div class="container" style="color: #fffdf8; border:2px solid  #ffc525; border-radius: 10px;" >
+
+    <h5 style="padding: 10px; text-align: center;">Made by Sujit Samanta</h5>
+
+  </div>
+</footer>
+
+  <script src="Assets/JS/script.js"></script>
+  <!-- <script type="text/javascript" src="assets/jquery/jquery-3.7.1.min.js"></script> -->
+  <!-- <script type="text/javascript" src="assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+</body>
+
+</html>
